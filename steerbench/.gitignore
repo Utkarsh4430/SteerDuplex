@@ -1,0 +1,8 @@
+# The benchmark data is downloaded from the Hugging Face dataset at runtime.
+# Run: python scripts/fetch_dataset.py   (writes everything under data/)
+data/
+runs/
+judgments/
+__pycache__/
+*.pyc
+.venv/

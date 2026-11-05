@@ -1,0 +1,20 @@
+# SteerBench inference. Python >= 3.10.
+# Reference runs used Python 3.11, torch 2.7.1 (CUDA 12.6), numpy 1.26.4, sphn 0.2.1,
+# safetensors 0.7.0, huggingface_hub 0.36.2, sentencepiece 0.2.1, einops 0.8.2,
+# pyloudnorm 0.2.0, soundfile 0.13.1, transformers 4.57.3.
+
+# driver + interface
+numpy>=1.26,<2.3
+soundfile>=0.12
+
+# reference Moshi-family path (vendored moshi 0.2.13 + PersonaPlex LMGen)
+torch>=2.2,<2.10
+sphn>=0.2.0,<0.3
+safetensors>=0.4,<0.8
+huggingface_hub>=0.24,<1.0
+sentencepiece>=0.2,<0.3
+einops>=0.7,<0.9
+pyloudnorm>=0.1.1
+
+# ASR (only needed for models without their own text stream, or --asr always)
+transformers>=4.45

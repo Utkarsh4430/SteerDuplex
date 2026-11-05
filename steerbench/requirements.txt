@@ -1,0 +1,5 @@
+# Judge + scoring + dataset fetch (CPU only). Inference has its own requirements: inference/requirements.txt
+openai>=1.55
+numpy>=1.24
+pyarrow>=12.0            # scripts/fetch_dataset.py reads the dataset parquet
+huggingface_hub>=0.23   # download the benchmark from the Hugging Face dataset
